@@ -1,3 +1,4 @@
+import ContactCTA from "../../components/sections/ContactCTA";
 import PageHero from "../../components/ui/PageHero";
 import Container from "../../components/layout/Container";
 import ContactForm from "../../components/forms/ContactForm";
@@ -28,6 +29,7 @@ export default function Contact() {
           </aside>
         </Container>
       </section>
-    </>
+    <ContactCTA />
+</>
   );
 }
