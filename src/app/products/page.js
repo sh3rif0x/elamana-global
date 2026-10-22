@@ -13,8 +13,8 @@ export default function ProductsPage() {
   return (
     <>
       <ProductsGallery />
-    <ProductsGrid />
       <PageHero title="المنتجات" subtitle="مواد التنظيف والزينة والخردوات بأسعار الجملة" />
+    <ProductsGrid />
 <ContactCTA />
 </>
   );
