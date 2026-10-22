@@ -12,8 +12,8 @@ export const metadata = buildMetadata({
 export default function ProductsPage() {
   return (
     <>
-      <ProductsGallery />
       <PageHero title="المنتجات" subtitle="مواد التنظيف والزينة والخردوات بأسعار الجملة" />
+      <ProductsGallery />
     <ProductsGrid />
 <ContactCTA />
 </>
