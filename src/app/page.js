@@ -1,3 +1,4 @@
+import ServicesList from "../components/sections/ServicesList";
 import AboutSection from "../components/sections/AboutSection";
 import HomeShowcase from "../components/sections/HomeShowcase";
 import ContactForm from "../components/sections/ContactForm";
@@ -20,9 +21,9 @@ export default function Home() {
     <>
       <Hero />
       <AboutSection />
+      <ServicesList />
       <HomeShowcase />
       <Banner />
-      <ServicesGrid />
       <HomeProducts />
       <WhyChooseUs />
       <HomeGallery />
