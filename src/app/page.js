@@ -27,7 +27,7 @@ export default function Home() {
       <WhyChooseUs />
       <HomeGallery />
       <ContactForm />
-      <ContactCTA />
-    </>
+    <ContactCTA />
+</>
   );
 }

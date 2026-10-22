@@ -14,7 +14,7 @@ export default function Services() {
     <>
       <PageHero title="خدماتنا" subtitle="حلول متكاملة للاستيراد والتوزيع بالجملة" />
       <ServicesGrid title="ماذا نقدم" />
-      <ContactCTA />
-    </>
+    <ContactCTA />
+</>
   );
 }

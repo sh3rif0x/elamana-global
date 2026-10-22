@@ -27,7 +27,7 @@ export default function About() {
         </Container>
       </section>
       <WhyChooseUs />
-      <ContactCTA />
-    </>
+    <ContactCTA />
+</>
   );
 }

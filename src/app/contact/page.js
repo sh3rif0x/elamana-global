@@ -29,7 +29,7 @@ export default function Contact() {
           </aside>
         </Container>
       </section>
-    <ContactCTA />
+<ContactCTA />
 </>
   );
 }
