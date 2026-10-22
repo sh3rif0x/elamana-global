@@ -1,5 +1,5 @@
-.wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;width:100%;background:#fff}
-.media{position:relative;min-height:400px}
+.wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;width:100%;max-width:1200px;margin:60px auto;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(11,46,99,.08)}
+.media{position:relative;min-height:380px}
 .img{object-fit:cover}
 .text{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:36px 5%}
 .eyebrow{display:inline-block;padding:6px 18px;margin-bottom:16px;border-radius:999px;background:#e8f2fe;color:#1e88e5;font-weight:700;font-size:15px}
