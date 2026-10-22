@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 export default function About() {
   return (
     <>
-      <PageHero title="من نحن" subtitle="شريككم الموثوق في التجارة الدولية" image="/images/banners/about-hero.webp" />
+      <PageHero title="من نحن" subtitle="شريككم الموثوق في التجارة الدولية" />
       <section className="section">
         <Container className="prose">
           <p>
