@@ -1,25 +1,168 @@
-.wrap{padding:90px 6%;background:linear-gradient(180deg,#f3f8ff 0%,#fff 100%)}
-.inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
-.eyebrow{display:inline-block;padding:6px 18px;margin-bottom:16px;border-radius:999px;background:#e8f2fe;color:#1e88e5;font-weight:700;font-size:15px}
-.info h2{margin:0 0 14px;font-size:clamp(28px,3.4vw,42px);color:#0b2e63;font-weight:800;line-height:1.4}
-.info p{margin:0 0 22px;font-size:18px;line-height:2;color:#4a5b75}
-.points{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.points li{position:relative;padding-right:30px;color:#0b2e63;font-weight:600}
-.points li::before{content:"✓";position:absolute;right:0;top:0;width:22px;height:22px;border-radius:50%;background:#1e88e5;color:#fff;font-size:13px;display:grid;place-items:center}
-.form{background:#fff;border:1px solid #e1ecfb;border-radius:24px;padding:34px;box-shadow:0 24px 60px rgba(30,136,229,.14);display:grid;gap:18px}
-.field{display:grid;gap:8px}
-.field span{font-weight:700;color:#0b2e63;font-size:15px}
-.field input,.field select,.field textarea{width:100%;padding:13px 16px;border:1.5px solid #d6e4f7;border-radius:14px;background:#f8fbff;font:inherit;font-size:16px;color:#0b2e63;outline:none;transition:border-color .25s,box-shadow .25s,background .25s}
-.field textarea{resize:vertical;min-height:100px}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:#1e88e5;background:#fff;box-shadow:0 0 0 4px rgba(30,136,229,.15)}
-.field em{font-style:normal;color:#d93025;font-size:13px}
-.btn{padding:15px;border:0;border-radius:999px;background:#1e88e5;color:#fff;font:inherit;font-weight:700;font-size:17px;cursor:pointer;transition:transform .25s,background .25s}
-.btn:hover{background:#0b4fb3;transform:translateY(-2px)}
-.ok{margin:0;text-align:center;color:#1b8a3a;font-weight:700}
-@media(max-width:900px){
-  .wrap{padding:60px 6%}
-  .inner{grid-template-columns:1fr;gap:36px}
-  .info{text-align:center}
-  .points{justify-items:center}
-  .form{padding:24px}
+.wrap {
+    padding: 90px 6%;
+    background: linear-gradient(180deg, #f3f8ff 0%, #fff 100%)
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 6px 18px;
+    margin-bottom: 16px;
+    border-radius: 999px;
+    background: #e8f2fe;
+    color: #1e88e5;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.info h2 {
+    margin: 0 0 14px;
+    font-size: clamp(28px, 3.4vw, 42px);
+    color: #0b2e63;
+    font-weight: 800;
+    line-height: 1.4
+}
+
+.info p {
+    margin: 0 0 22px;
+    font-size: 18px;
+    line-height: 2;
+    color: #4a5b75
+}
+
+.points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px
+}
+
+.points li {
+    position: relative;
+    padding-right: 30px;
+    color: #0b2e63;
+    font-weight: 600
+}
+
+.points li::before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #1e88e5;
+    color: #fff;
+    font-size: 13px;
+    display: grid;
+    place-items: center
+}
+
+.form {
+    background: #fff;
+    border: 1px solid #e1ecfb;
+    border-radius: 24px;
+    padding: 34px;
+    box-shadow: 0 24px 60px rgba(30, 136, 229, .14);
+    display: grid;
+    gap: 18px
+}
+
+.field {
+    display: grid;
+    gap: 8px
+}
+
+.field span {
+    font-weight: 700;
+    color: #0b2e63;
+    font-size: 15px
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #d6e4f7;
+    border-radius: 14px;
+    background: #f8fbff;
+    font: inherit;
+    font-size: 16px;
+    color: #0b2e63;
+    outline: none;
+    transition: border-color .25s, box-shadow .25s, background .25s
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 100px
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #1e88e5;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(30, 136, 229, .15)
+}
+
+.field em {
+    font-style: normal;
+    color: #d93025;
+    font-size: 13px
+}
+
+.btn {
+    padding: 15px;
+    border: 0;
+    border-radius: 999px;
+    background: #1e88e5;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform .25s, background .25s
+}
+
+.btn:hover {
+    background: #0b4fb3;
+    transform: translateY(-2px)
+}
+
+.ok {
+    margin: 0;
+    text-align: center;
+    color: #1b8a3a;
+    font-weight: 700
+}
+
+@media(max-width:900px) {
+    .wrap {
+        padding: 60px 6%
+    }
+    .inner {
+        grid-template-columns: 1fr;
+        gap: 36px
+    }
+    .info {
+        text-align: center
+    }
+    .points {
+        justify-items: center
+    }
+    .form {
+        padding: 24px
+    }
 }
