@@ -1,4 +1,4 @@
-import HomeGallery from "../components/sections/HomeGallery";
+import HomeGallery from "../components/sections/HomeGalleryLazy";
 import AboutSection from "../components/sections/AboutSection";
 import Hero from "../components/sections/Hero";
 import ServicesList from "../components/sections/ServicesList";
