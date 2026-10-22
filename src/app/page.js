@@ -1,3 +1,4 @@
+import AboutSection from "../components/sections/AboutSection";
 import HomeShowcase from "../components/sections/HomeShowcase";
 import ContactForm from "../components/sections/ContactForm";
 import HomeGallery from "../components/sections/HomeGallery";
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AboutSection />
       <HomeShowcase />
       <Banner />
       <ServicesGrid />
