@@ -12,10 +12,10 @@ export const metadata = buildMetadata({
 export default function ProductsPage() {
   return (
     <>
-      <PageHero title="المنتجات" subtitle="مواد التنظيف والزينة والخردوات بأسعار الجملة" />
       <ProductsGallery />
       <ContactCTA />
     <ProductsGrid />
+      <PageHero title="المنتجات" subtitle="مواد التنظيف والزينة والخردوات بأسعار الجملة" />
 </>
   );
 }
