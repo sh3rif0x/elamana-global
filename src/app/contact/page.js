@@ -1,9 +1,11 @@
+import Image from "next/image";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import ContactCTA from "../../components/sections/ContactCTA";
 import PageHero from "../../components/ui/PageHero";
-import Container from "../../components/layout/Container";
 import ContactForm from "../../components/forms/ContactForm";
 import { COMPANY } from "../../data/company";
 import { buildMetadata } from "../../lib/seo";
+import styles from "./contact.module.css";
 
 export const metadata = buildMetadata({
   title: "تواصل معنا",
@@ -12,24 +14,47 @@ export const metadata = buildMetadata({
 });
 
 export default function Contact() {
+  const tel = COMPANY.phone.replace(/\s/g, "");
   return (
     <>
       <PageHero title="تواصل معنا" subtitle="نسعد بخدمتك والرد على استفساراتك" />
-      <section className="section">
-        <Container className="contact-grid">
-          <ContactForm />
-          <aside className="card">
-            <h3>معلومات التواصل</h3>
-            <ul className="info">
-              <li>الهاتف: <a href={`tel:${COMPANY.phone.replace(/\s/g, "")}`} dir="ltr">{COMPANY.phone}</a></li>
-              <li>البريد: <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></li>
-              <li>العنوان: {COMPANY.address}</li>
-              <li>ساعات العمل: {COMPANY.hours}</li>
-            </ul>
-          </aside>
-        </Container>
+      <section className={styles.wrap} dir="rtl">
+        <div className={styles.top}>
+          <div className={styles.formBox}>
+            <ContactForm />
+          </div>
+          <div className={styles.media}>
+            <Image
+              src="/images/about/alamana-products-bucket-base-portrait.webp"
+              alt="منتجات الأمانة العالمية المميزة"
+              fill
+              unoptimized
+              sizes="(max-width:900px) 100vw, 40vw"
+              className={styles.img}
+            />
+          </div>
+        </div>
+
+        <ul className={styles.info}>
+          <li>
+            <span className={styles.icon}><Phone size={26} strokeWidth={1.7} /></span>
+            <div><h3>الهاتف</h3><a href={`tel:${tel}`} dir="ltr">{COMPANY.phone}</a></div>
+          </li>
+          <li>
+            <span className={styles.icon}><Mail size={26} strokeWidth={1.7} /></span>
+            <div><h3>البريد</h3><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></div>
+          </li>
+          <li>
+            <span className={styles.icon}><MapPin size={26} strokeWidth={1.7} /></span>
+            <div><h3>العنوان</h3><span>{COMPANY.address}</span></div>
+          </li>
+          <li>
+            <span className={styles.icon}><Clock size={26} strokeWidth={1.7} /></span>
+            <div><h3>ساعات العمل</h3><span>{COMPANY.hours}</span></div>
+          </li>
+        </ul>
       </section>
-<ContactCTA />
-</>
+      <ContactCTA />
+    </>
   );
 }
