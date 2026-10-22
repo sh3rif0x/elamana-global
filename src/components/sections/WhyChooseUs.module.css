@@ -1,0 +1,7 @@
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:40px 32px}
+.item{background:none;border:0;box-shadow:none;padding:0;text-align:center}
+.icon{display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin-bottom:18px;color:#1e88e5}
+.item h3{margin:0 0 8px;color:#0b2e63;font-size:20px;font-weight:800}
+.item p{margin:0;color:#4a5b73;font-size:15px;line-height:1.9}
+@media(max-width:900px){.list{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.list{grid-template-columns:1fr}}
