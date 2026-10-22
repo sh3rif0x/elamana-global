@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Container from "../layout/Container";
 import SectionHeading from "../ui/SectionHeading";
-import { SprayCan, PartyPopper, Wrench, Boxes, Truck, Headset } from "lucide-react";
+import { SprayCan, ScrollText, Brush, Boxes, Truck, Headset } from "lucide-react";
 import styles from "./ServicesList.module.css";
 
 const ITEMS = [
-  { img: "inner-cleaning-supplies-01-1254x941.webp", Icon: SprayCan, title: "استيراد مواد التنظيف", text: "نستورد منظفات ومستلزمات تنظيف بمعايير جودة عالمية من موردين معتمدين، لتلبية احتياجات المحلات والمؤسسات." },
-  { img: "inner-tissues-paper-supplies-02.webp", Icon: PartyPopper, title: "استيراد مواد الزينة", text: "تشكيلة عصرية من مواد الزينة بتصاميم حديثة، تناسب المناسبات والمحلات وبأسعار مناسبة." },
-  { img: "inner-cleaning-tools-03.webp", Icon: Wrench, title: "استيراد الخردوات", text: "أدوات وخردوات متينة ومتنوعة تخدم مختلف الاستخدامات المنزلية والتجارية." },
-  { img: "inner-bulk-distribution-04.webp", Icon: Boxes, title: "التوزيع بالجملة", text: "نورّد للمحلات والأسواق في كل أنحاء ليبيا بكميات مرنة وأسعار جملة تنافسية." },
-  { img: "inner-fast-delivery-05.webp", Icon: Truck, title: "توصيل سريع", text: "نوصّل طلبك في الموعد المتفق عليه إلى محلك أو مخزنك، بتغليف آمن." },
-  { img: "inner-customer-support-06-1254x941.webp", Icon: Headset, title: "دعم بعد البيع", text: "نتابع معك حتى استلام طلبك، ونضمن رضاك الكامل عن كل عملية." },
+  { img: "inner-cleaning-supplies-01-1254x941.webp", Icon: SprayCan, title: "استيراد مواد التنظيف", text: "منتجات تنظيف عالية الجودة من موردين موثوقين لتلبية احتياجات المحلات والمؤسسات." },
+  { img: "inner-tissues-paper-supplies-02.webp", Icon: ScrollText, title: "مناديل ومواد ورقية", text: "نوفر المناديل الورقية ومواد الاستخدام اليومي بجودة عالية وأسعار مناسبة." },
+  { img: "inner-cleaning-tools-03.webp", Icon: Brush, title: "توريد أدوات النظافة", text: "نوفر المكانس والفرش والجرف وأدوات المسح والتنظيف بجودة جيدة وأسعار مناسبة." },
+  { img: "inner-bulk-distribution-04.webp", Icon: Boxes, title: "التوزيع بالجملة", text: "نورد للمحلات والأسواق في جميع أنحاء ليبيا بكميات تناسب احتياجك." },
+  { img: "inner-fast-delivery-05.webp", Icon: Truck, title: "توصيل سريع", text: "نوصل طلباتك في الموعد المحدد إلى محلك أو مخزنك." },
+  { img: "inner-customer-support-06-1254x941.webp", Icon: Headset, title: "دعم بعد البيع", text: "نتابع معك حتى استلام الطلب ورضاك الكامل عنه." },
 ];
 
 export default function ServicesList() {
