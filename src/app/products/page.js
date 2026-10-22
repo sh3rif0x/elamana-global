@@ -1,3 +1,4 @@
+import ProductsGrid from "../../components/sections/ProductsGrid";
 import PageHero from "../../components/ui/PageHero";
 import ProductsGallery from "../../components/sections/ProductsGallery";
 import ContactCTA from "../../components/sections/ContactCTA";
@@ -14,6 +15,7 @@ export default function ProductsPage() {
       <PageHero title="المنتجات" subtitle="مواد التنظيف والزينة والخردوات بأسعار الجملة" />
       <ProductsGallery />
       <ContactCTA />
-    </>
+    <ProductsGrid />
+</>
   );
 }
