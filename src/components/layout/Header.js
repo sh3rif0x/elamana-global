@@ -12,8 +12,8 @@ export default function Header() {
     <header className="header">
       <Container className="header-inner">
         <Link href="/" className="logo" onClick={() => setOpen(false)}>
-          <strong>{COMPANY.name}</strong>
-          <small>{COMPANY.tagline}</small>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/website-header-logo-transparent.webp" alt={COMPANY.name} />
         </Link>
         <Navbar />
         <button className="burger" aria-label="القائمة" aria-expanded={open} onClick={() => setOpen(!open)}>

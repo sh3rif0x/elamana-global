@@ -76,9 +76,6 @@ export default function Hero() {
                 <a href="/المنتجات" className={`${styles.btn} ${styles.primary} ${styles.pulse}`}>
                   تصفح المنتجات
                 </a>
-                <a href="/تواصل-معنا" className={`${styles.btn} ${styles.ghost}`}>
-                  تواصل معنا
-                </a>
               </div>
             </div>
           </div>

@@ -8,7 +8,10 @@ export default function Footer() {
     <footer className="footer">
       <Container className="footer-grid">
         <div>
-          <h3>{COMPANY.name}</h3>
+          <Link href="/" className="footer-logo" aria-label={COMPANY.name}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/website-header-logo-transparent.webp" alt={COMPANY.name} />
+          </Link>
           <p>{COMPANY.description}</p>
         </div>
         <div>
