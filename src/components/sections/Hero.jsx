@@ -74,7 +74,7 @@ export default function Hero() {
               <h1>{s.title}</h1>
               <p>{s.text}</p>
               <div className={styles.actions}>
-                <Link href="/contact" className={styles.btnPrimary}>تواصل معنا</Link>
+                <a href="tel:+218911116777" className={styles.btnPrimary}>تواصل معنا</a>
               </div>
             </div>
           </div>
