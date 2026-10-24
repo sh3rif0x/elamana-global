@@ -258,35 +258,3 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
   .header .logo-text small { display: block !important; font-size: .72rem; white-space: normal; }
   .header .burger { display: flex !important; flex: none; }
 }
-
-/* Floating header: overlays the hero, doesn't push it down */
-.header {
-  position: fixed !important;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(100% - 32px, 1280px);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .88) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(11, 46, 99, .18) !important;
-  padding-block: 4px !important;
-  z-index: 100;
-}
-.header-inner { padding-inline: 20px; }
-.hero { padding-top: 0 !important; }
-.hero-card, [class*="Hero_hero"] { margin-top: 0 !important; }
-.mobile-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-  right: 0;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(11, 46, 99, .18);
-}
-@media (max-width: 700px) {
-  .header { top: 8px; width: calc(100% - 20px); border-radius: 28px; }
-  .header-inner { padding-inline: 12px; }
-}
