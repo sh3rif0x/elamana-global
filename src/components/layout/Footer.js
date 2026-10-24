@@ -24,6 +24,18 @@ export default function Footer() {
             <li>{COMPANY.hours}</li>
           </ul>
         </div>
+        <div>
+          <h4>موقعنا</h4>
+          <div className="footer-map">
+            <iframe
+              src={`https://www.google.com/maps?q=${encodeURIComponent(COMPANY.address)}&output=embed&hl=ar`}
+              title="موقعنا على الخريطة"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </Container>
       <div className="copyright">© 2026 {COMPANY.name}. جميع الحقوق محفوظة.</div>
     </footer>
