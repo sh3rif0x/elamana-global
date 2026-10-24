@@ -258,3 +258,16 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
     line-height: 1.4;
   }
 }
+
+/* Mobile header: no logo image, full name */
+@media (max-width: 700px) {
+  .header .logo { flex: 1 1 auto; min-width: 0; }
+  .header .logo img { display: none !important; }
+  .header .logo-text { display: flex; min-width: 0; }
+  .header .logo-text strong {
+    white-space: normal; overflow: visible; text-overflow: unset;
+    font-size: 1rem; line-height: 1.4;
+  }
+  .header .logo-text small { display: block !important; font-size: .72rem; white-space: normal; }
+  .header .burger { display: flex !important; flex: none; }
+}
