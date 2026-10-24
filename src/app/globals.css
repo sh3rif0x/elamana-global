@@ -209,3 +209,52 @@ h1, h2, h3 { line-height: 1.4; }
 .fab-top.show:hover{transform:translateY(-4px) scale(1.06)}
 @keyframes fabPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
 @media(max-width:700px){.fab{width:50px;height:50px}.fab-stack{right:14px;bottom:16px}.fab-top{left:14px;bottom:16px}}
+
+/* CTA buttons: blue + shine on hover */
+a[class*="cta"], button[class*="cta"], .cta, .btn, .btn-primary,
+a[class*="btn"], button[class*="btn"] {
+  position: relative;
+  overflow: hidden;
+  background: #1d6fe8 !important;
+  color: #fff !important;
+  border: none !important;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+a[class*="cta"]:hover, button[class*="cta"]:hover, .cta:hover, .btn:hover, .btn-primary:hover,
+a[class*="btn"]:hover, button[class*="btn"]:hover {
+  background: #1d6fe8 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(29,111,232,.45);
+}
+a[class*="cta"]::after, button[class*="cta"]::after, .cta::after, .btn::after, .btn-primary::after,
+a[class*="btn"]::after, button[class*="btn"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.55), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+a[class*="cta"]:hover::after, button[class*="cta"]:hover::after, .cta:hover::after, .btn:hover::after, .btn-primary:hover::after,
+a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
+  left: 130%;
+  transition: left .7s ease;
+}
+
+/* Mobile header: hide logo, show full name */
+@media (max-width: 640px) {
+  header img, header .logo, header [class*="logo"] { display: none !important; }
+  header .site-name, header [class*="brand"] span, header [class*="logo"] + span {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    max-width: none !important;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
