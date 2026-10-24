@@ -245,29 +245,16 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
   transition: left .7s ease;
 }
 
-/* Mobile header: hide logo, show full name */
-@media (max-width: 640px) {
-  header img, header .logo, header [class*="logo"] { display: none !important; }
-  header .site-name, header [class*="brand"] span, header [class*="logo"] + span {
-    display: block !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: unset !important;
-    max-width: none !important;
-    font-size: 15px;
-    line-height: 1.4;
-  }
-}
+
+
+
 
 /* Mobile header: no logo image, full name */
 @media (max-width: 700px) {
   .header .logo { flex: 1 1 auto; min-width: 0; }
   .header .logo img { display: none !important; }
-  .header .logo-text { display: flex; min-width: 0; }
-  .header .logo-text strong {
-    white-space: normal; overflow: visible; text-overflow: unset;
-    font-size: 1rem; line-height: 1.4;
-  }
+  .header .logo-text { display: flex !important; min-width: 0; }
+  .header .logo-text strong { white-space: normal; font-size: 1rem; line-height: 1.4; }
   .header .logo-text small { display: block !important; font-size: .72rem; white-space: normal; }
   .header .burger { display: flex !important; flex: none; }
 }
