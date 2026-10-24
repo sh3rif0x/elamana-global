@@ -15,7 +15,6 @@ export const metadata = buildMetadata({
 
 export default function Contact() {
   const tel = COMPANY.phone.replace(/\s/g, "");
-  const mapSrc = COMPANY.mapSrc;
   return (
     <>
       <PageHero title="تواصل معنا" subtitle="نسعد بخدمتك والرد على استفساراتك" />
@@ -54,16 +53,6 @@ export default function Contact() {
             <div><h3>ساعات العمل</h3><span>{COMPANY.hours}</span></div>
           </li>
         </ul>
-
-        <div className={styles.map}>
-          <iframe
-            src={mapSrc}
-            title="موقع شركة الأمانة العالمية المميزة"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
-        </div>
       </section>
       <ContactCTA />
     </>
