@@ -8,7 +8,7 @@ const WHATSAPP_NUMBER = "201000000000";
 
 function getImages() {
   try {
-    const dir = path.join(process.cwd(), "public/images/productss");
+    const dir = path.join(process.cwd(), "public/images/products");
     return fs
       .readdirSync(dir)
       .filter((f) => /\.(webp|png|jpe?g)$/i.test(f))
@@ -19,7 +19,7 @@ function getImages() {
 }
 
 // limit = عدد الصور المعروضة (0 = الكل)
-export default function ProductsGallery({ limit = 3 }) {
+export default function ProductsGallery({ limit = 0 }) {
   const all = getImages();
   const items = limit > 0 ? all.slice(0, limit) : all;
 
@@ -33,10 +33,10 @@ export default function ProductsGallery({ limit = 3 }) {
 
       <div className={styles.grid} dir="rtl">
         {items.map((img, i) => (
-          <article className={styles.card} key={img}>
+          <article className={`${styles.card} ${i % 3 === 0 ? styles.hideSm : ""}`} key={img}>
             <div className={styles.frame}>
               <Image
-                src={`/images/productss/${img}`}
+                src={`/images/products/${img}`}
                 alt={`منتج ${i + 1}`}
                 fill
                 unoptimized

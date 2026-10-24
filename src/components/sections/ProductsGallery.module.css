@@ -15,3 +15,8 @@
 .btn:hover{background:#0b4fb3;transform:translateY(-2px)}
 @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.wrap{padding:60px 5%}.grid{grid-template-columns:1fr}}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  .hideSm { display: none !important; }
+}
