@@ -20,7 +20,7 @@ export default function ProductsPager({ files }) {
     <section className={styles.wrap} dir="rtl" ref={topRef}>
       <div className={styles.grid}>
         {items.map((f, i) => (
-          <div className={styles.item} key={f}>
+          <div className={`${styles.item} ${(parseInt(f.replace(/\D/g,""),10) - 1) % 3 === 0 ? styles.hideSm : ""}`} key={f}>
             <Image
               src={`/images/products/${f}`}
               alt={`منتج ${(page - 1) * PER_PAGE + i + 1}`}

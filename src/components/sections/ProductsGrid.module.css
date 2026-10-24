@@ -11,3 +11,8 @@
 .nav:disabled{opacity:.4;cursor:not-allowed}
 
 @media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  .hideSm { display: none !important; }
+}
