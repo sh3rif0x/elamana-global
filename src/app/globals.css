@@ -258,3 +258,14 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
   .header .logo-text small { display: block !important; font-size: .72rem; white-space: normal; }
   .header .burger { display: flex !important; flex: none; }
 }
+
+/* Mobile menu: overlay, doesn't push content */
+.header { position: sticky; }
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0 12px 24px rgba(11, 46, 99, .15);
+}
