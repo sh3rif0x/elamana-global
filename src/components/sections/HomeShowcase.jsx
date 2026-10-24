@@ -3,10 +3,10 @@ import Link from "next/link";
 import styles from "./HomeShowcase.module.css";
 
 const ITEMS = [
-  { img: "wet_wipes_product_hero_sample.webp", title: "مناديل مبللة" },
-  { img: "rasty_product_hero.webp", title: "منظف راستي" },
-  { img: "felce_azzurra_product_hero.webp", title: "فيلشي أزورا" },
-  { img: "dove_deodorant_product_hero.webp", title: "مزيل عرق دوف" },
+  { img: "banner-1.webp", title: "مكانس وجاروف" },
+  { img: "banner-2.webp", title: "مناديل مبللة" },
+  { img: "banner-3.webp", title: "مكانس سيما" },
+  { img: "banner-4.webp", title: "ممسحة سيما" },
 ];
 
 export default function HomeShowcase() {
