@@ -37,7 +37,13 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <div className="copyright">© 2026 {COMPANY.name}. جميع الحقوق محفوظة.</div>
+      <div className="copyright">
+        <span>© 2026 {COMPANY.name}. جميع الحقوق محفوظة.</span>
+        <span className="credit">
+          تصميم وتطوير{" "}
+          <a href="https://wa.me/201279924599" target="_blank" rel="noopener noreferrer">علي شريف</a>
+        </span>
+      </div>
     </footer>
   );
 }
