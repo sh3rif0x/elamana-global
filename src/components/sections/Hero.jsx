@@ -73,9 +73,6 @@ export default function Hero() {
               <h1>{s.title}</h1>
               <p>{s.text}</p>
               <div className={styles.actions}>
-                <a href="/المنتجات" className={`${styles.btn} ${styles.primary} ${styles.pulse}`}>
-                  تصفح المنتجات
-                </a>
               </div>
             </div>
           </div>
