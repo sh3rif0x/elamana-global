@@ -283,3 +283,24 @@ section[class*="AboutSection_wrap"] {
 @media (max-width: 560px) {
   section[class*="AboutSection_wrap"] { width: calc(100% - 32px) !important; border-radius: 20px !important; }
 }
+
+/* About: boxed card with side spacing + stack on medium screens */
+section[class*="AboutSection_wrap"] {
+  width: min(100% - 48px, 1280px) !important;
+  margin-inline: auto !important;
+  border-radius: 28px !important;
+}
+@media (max-width: 1100px) {
+  section[class*="AboutSection_wrap"] {
+    grid-template-columns: 1fr !important;
+    width: calc(100% - 40px) !important;
+  }
+  section[class*="AboutSection_wrap"] > div:first-child { order: 2; min-height: 300px; }
+  section[class*="AboutSection_wrap"] > div:last-child { order: 1; padding: 36px 6% !important; }
+}
+@media (max-width: 560px) {
+  section[class*="AboutSection_wrap"] {
+    width: calc(100% - 32px) !important;
+    border-radius: 20px !important;
+  }
+}
