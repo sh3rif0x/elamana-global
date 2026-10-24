@@ -28,7 +28,7 @@ export default function Footer() {
           <h4>موقعنا</h4>
           <div className="footer-map">
             <iframe
-              src={`https://www.google.com/maps?q=${encodeURIComponent(COMPANY.address)}&output=embed&hl=ar`}
+              src={COMPANY.mapSrc}
               title="موقعنا على الخريطة"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

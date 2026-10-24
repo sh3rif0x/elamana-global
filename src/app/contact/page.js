@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 
 export default function Contact() {
   const tel = COMPANY.phone.replace(/\s/g, "");
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(COMPANY.address)}&output=embed&hl=ar`;
+  const mapSrc = COMPANY.mapSrc;
   return (
     <>
       <PageHero title="تواصل معنا" subtitle="نسعد بخدمتك والرد على استفساراتك" />
