@@ -24,21 +24,10 @@ export default function Footer() {
             <li>{COMPANY.hours}</li>
           </ul>
         </div>
-        <div>
-          <h4>موقعنا</h4>
-          <div className="footer-map">
-            <iframe
-              src={COMPANY.mapSrc}
-              title="موقعنا على الخريطة"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
-        </div>
       </Container>
       <div className="copyright">
         <span>© 2026 {COMPANY.name}. جميع الحقوق محفوظة.</span>
+        <span className="sep" aria-hidden="true">|</span>
         <span className="credit">
           تصميم وتطوير{" "}
           <a href="https://wa.me/201279924599" target="_blank" rel="noopener noreferrer">علي شريف</a>

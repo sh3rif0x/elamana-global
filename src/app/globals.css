@@ -102,7 +102,7 @@ h1, h2, h3 { line-height: 1.4; }
 
 /* footer */
 .footer { background: var(--navy); color: #cfd9e8; padding-top: 56px; }
-.footer-grid { display: grid; grid-template-columns: 1.6fr .8fr 1.2fr 1.4fr; gap: 32px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.4fr; gap: 32px; }
 .footer h3, .footer h4 { color: #fff; margin-bottom: 12px; }
 .footer li { margin-bottom: 6px; }
 .footer a:hover { color: #fff; text-decoration: underline; }
@@ -180,3 +180,4 @@ h1, h2, h3 { line-height: 1.4; }
 .copyright{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 24px}
 .copyright .credit a{color:#fff;font-weight:700;text-decoration:none}
 .copyright .credit a:hover{text-decoration:underline}
+.copyright .sep{opacity:.5}
