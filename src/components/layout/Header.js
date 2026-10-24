@@ -13,7 +13,11 @@ export default function Header() {
       <Container className="header-inner">
         <Link href="/" className="logo" onClick={() => setOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/website-header-logo-transparent.webp" alt={COMPANY.name} />
+          <img src="/images/website-header-logo-transparent.webp" alt="" />
+          <span className="logo-text">
+            <strong>{COMPANY.name}</strong>
+            <small>{COMPANY.tagline}</small>
+          </span>
         </Link>
         <Navbar />
         <button className="burger" aria-label="القائمة" aria-expanded={open} onClick={() => setOpen(!open)}>
