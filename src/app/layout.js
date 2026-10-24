@@ -2,7 +2,7 @@ import { Cairo } from "next/font/google";
 import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import WhatsAppButton from "../components/forms/WhatsAppButton";
+import FloatingActions from "../components/layout/FloatingActions";
 import { COMPANY } from "../data/company";
 import { SITE_URL } from "../lib/constants";
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <FloatingActions />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>
     </html>
