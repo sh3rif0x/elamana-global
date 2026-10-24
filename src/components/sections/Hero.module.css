@@ -210,4 +210,6 @@
     .actions {
         justify-content: center
     }
-}
+}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.btnPrimary{display:inline-block;padding:16px 52px;border-radius:999px;background:#fff;color:#0b4fb3;font-weight:800;font-size:18px;text-decoration:none;border:2px solid rgba(255,255,255,.7);transition:background .25s,color .25s,transform .25s}
+.btnPrimary:hover{background:#1e88e5;color:#fff;transform:translateY(-2px)}

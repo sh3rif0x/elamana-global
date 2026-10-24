@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Hero.module.css";
@@ -73,6 +74,7 @@ export default function Hero() {
               <h1>{s.title}</h1>
               <p>{s.text}</p>
               <div className={styles.actions}>
+                <Link href="/contact" className={styles.btnPrimary}>تواصل معنا</Link>
               </div>
             </div>
           </div>
