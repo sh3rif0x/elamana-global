@@ -6,31 +6,36 @@ import styles from "./Hero.module.css";
 
 const SLIDES = [
   {
-    image: "/images/hero/hero-bubbles-blue.webp",
+    image: "/images/hero/hero-1.webp",
+    mobile: "/images/hero/hero-1-sm.webp",
     eyebrow: "شركة الأمانة العالمية المميزة",
     title: "لاستيراد مواد الزينة والخردوات ومواد التنظيف",
     text: "متخصصون في استيراد وتوزيع مواد التنظيف عالية الجودة للمحلات والأسواق في جميع أنحاء ليبيا.",
   },
   {
-    image: "/images/hero/hero-cleaning-tools.webp",
+    image: "/images/hero/hero-2.webp",
+    mobile: "/images/hero/hero-2-sm.webp",
     eyebrow: "جودة مضمونة",
     title: "منتجات تنظيف بمعايير عالمية",
     text: "تشكيلة واسعة من المنظفات والأدوات تناسب كل المحلات والأسواق.",
   },
   {
-    image: "/images/hero/hero-foam-blue.webp",
+    image: "/images/hero/hero-3.webp",
+    mobile: "/images/hero/hero-3-sm.webp",
     eyebrow: "نظافة تدوم",
     title: "نظافة فائقة ولمعان يدوم",
     text: "منظفات فعّالة تعطيك أفضل النتائج بأقل مجهود وأسعار تنافسية.",
   },
   {
-    image: "/images/hero/hero-sponges-flatlay.webp",
+    image: "/images/hero/hero-5.webp",
+    mobile: "/images/hero/hero-5-sm.webp",
     eyebrow: "أدوات متكاملة",
     title: "كل ما تحتاجه لنظافة أفضل",
     text: "إسفنج وقفازات وأدوات تنظيف بجودة عالية للمحلات والمؤسسات.",
   },
   {
-    image: "/images/hero/hero-bubbles-teal.webp",
+    image: "/images/hero/hero-4.webp",
+    mobile: "/images/hero/hero-4-sm.webp",
     eyebrow: "توصيل سريع",
     title: "نوصّل لكل مدن ليبيا",
     text: "خدمة توصيل سريعة وموثوقة مع دعم مباشر عبر واتساب.",
@@ -64,7 +69,11 @@ export default function Hero() {
       >
         {SLIDES.map((s, idx) => (
           <div key={idx} className={`${styles.slide} ${idx === i ? styles.active : ""}`}>
-            <Image src={s.image} alt="" fill priority={idx === 0} sizes="100vw" className={styles.img} />
+            <picture>
+              <source media="(max-width: 700px)" srcSet={s.mobile} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={s.image} alt="" className={styles.img} loading={idx === 0 ? "eager" : "lazy"} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+            </picture>
             <div className={styles.overlay} />
 
             <div className={styles.content} dir="rtl">

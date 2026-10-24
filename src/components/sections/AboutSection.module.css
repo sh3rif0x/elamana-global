@@ -114,3 +114,9 @@
         padding: 48px 6%
     }
 }
+
+/* mobile: text first, image below */
+@media (max-width: 900px) {
+  .text { order: 1; }
+  .media { order: 2; }
+}

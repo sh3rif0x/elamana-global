@@ -269,3 +269,17 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
     flex-direction: column-reverse !important;
   }
 }
+
+/* About: same width as hero card */
+section[class*="AboutSection_wrap"] {
+  width: min(100% - 160px, 1280px) !important;
+  max-width: 1280px !important;
+  margin-inline: auto !important;
+  border-radius: 32px !important;
+}
+@media (max-width: 900px) {
+  section[class*="AboutSection_wrap"] { width: calc(100% - 48px) !important; border-radius: 24px !important; }
+}
+@media (max-width: 560px) {
+  section[class*="AboutSection_wrap"] { width: calc(100% - 32px) !important; border-radius: 20px !important; }
+}
