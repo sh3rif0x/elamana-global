@@ -258,3 +258,14 @@ a[class*="btn"]:hover::after, button[class*="btn"]:hover::after {
   .header .logo-text small { display: block !important; font-size: .72rem; white-space: normal; }
   .header .burger { display: flex !important; flex: none; }
 }
+
+/* About: on mobile, text first then image */
+@media (max-width: 900px) {
+  [class*="AboutSection_grid"],
+  [class*="AboutSection_wrap"],
+  [class*="AboutSection_inner"],
+  [class*="AboutSection_container"] {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}
